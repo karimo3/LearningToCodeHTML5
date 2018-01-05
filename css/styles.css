@@ -1,0 +1,227 @@
+*{
+	box-sizing: border-box;
+	font-family: Helvetica sans-serif;
+}
+
+html, body {
+	background-image: url("../images/bg-9-full.jpg"); 
+	/* font-size: $base-font-size; */
+	line-height: $base-line-height;
+	margin:0;
+	padding:0;
+	height: 100%;
+	width: 100%;
+}
+
+canvas {
+	border: 2px solid black;
+}
+
+.wrapper {
+	margin: 52px 0 0 250px;
+}
+
+.sidebar {
+    background-image: url("../images/bg-9-full.jpg");
+    position: fixed;
+	height: 100%;
+	overflow: hidden;
+	border-style: groove;
+	margin: 0;
+    left: 0;
+	width: 250px;
+	padding: 5px;
+}
+
+.content {
+    margin: 0;
+    padding: 4px;
+	
+}
+
+.center{
+	text-align:left;
+	padding; 0px;
+}
+
+}
+.section {
+	height: 100%;
+    width:150px;
+    float:left;
+    padding:0px; 
+}
+
+.prek {
+	margin: 0;
+	font-family: sand-serrif;
+	font-size: 10px;
+	bottom: 0;
+	height: 10px;
+
+}
+
+.footer {
+    /* background-color:#7FFFD4; */
+	 background-image: url("../images/bg-9-full.jpg");
+	position: fixed;
+	height: 2.5%;
+	bottom:0;
+	text-align:center; 
+	color: white;
+	width: 100%;
+	
+}
+
+input:required {
+  border-left: 4px solid #c33;
+}
+
+input:focus:invalid,
+textarea:focus:invalid,
+select:focus:invalid {
+  color: #c33;
+  border-color: #c33;
+}
+
+input:focus:invalid:focus,
+textarea:focus:invalid:focus,
+select:focus:invalid:focus {
+  border-color: #c33;
+  -webkit-box-shadow: 0 0 6px #fcc;
+     -moz-box-shadow: 0 0 6px #fcc;
+          box-shadow: 0 0 6px #fcc;
+}
+
+h3{
+	text-align:left;
+}
+
+h4{color:blue;
+}
+
+p { color:black;
+}
+
+table, th, td { 
+	border: 1px solid black; 
+	border-collapse: collapse;
+	float: left;
+
+}
+
+th, td { padding: 10px;
+
+}
+
+input[type=text], input[type=password], textarea{
+    width: auto;
+}
+
+label{
+    font-weight: bold;
+    display: block;
+	
+}
+
+/* begin */
+.animation1{
+    width: 100%;
+    height: 30px;
+    position: relative;
+	background-color: #F0E68C;
+    animation-name: color-change;
+    animation-duration: 2s;
+    animation-iteration-count: 3;
+    animation-direction: reverse;    
+}
+
+/* Standard syntax */
+@keyframes color-change {
+     from {background-color: yellow;}
+    to {background-color: green;}
+}
+/* end */
+
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: auto;
+}
+
+img:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+a:link{
+	color:blue;
+}
+a:hover{
+	color: white;
+}
+a:active{
+	color:red;
+}
+
+a:visited{
+	color:green;
+}
+
+
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+ /* Style inputs with type="text", select elements and textareas */
+input[type=text], select, email, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.contactcontainer {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+} 
+
+
+

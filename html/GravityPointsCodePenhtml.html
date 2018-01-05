@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Kids Learn</title>
+		<link rel="shortcut icon" href="../images/pic_bulbon.gif"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		 <meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+		
+		<script type="text/javascript" src="../javascript/dat.gui.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/GravityPointsCodePenhtmlcss.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css"/>
+	</head>
+	
+	
+<body>
+<main>
+	
+	<article class="wrapper">
+
+		<nav>
+			<div class="navbar navbar-inverse navbar-fixed-top" >
+				<header class="container">
+					<div class="navbar-header">
+						<a class="navbar-brand" href="./index.html">Kids Learn!</a>
+						<button class="navbar-toggle" data-toggle="collapse" data-target="#menu">&#9776;</button>
+					</div>
+					<div id="menu" class="collapse navbar-collapse">
+						<ul class="nav navbar-nav">
+							<li><a href="./index.html">Home</a></li>
+							<li><a href="./register.html">Register</a></li>
+							<li><a href="./About.html">About</a></li>
+							<li ><a href="./Contact.html">Contact</a></li>
+							<li><a href="./Services.html">Services</a></li>
+							<li class="active"><a href="./GravityPointsCodePenhtml.html">Gravity Points</a></li>
+						</ul>
+					</div>
+				</header>
+			</div>
+		</nav>
+
+		
+	
+	<div class="content">
+		<canvas id="c"></canvas>
+		<div class="info">Click to add gravity point.</div>
+	</div>
+	
+	<section class="sidebar">
+		
+		<form class="well">
+			<div class="row">
+				<div class="form-group">
+					<h3><u>Login</u>:</h3>
+				</div>
+			
+				<div class="form-group">
+					<label> Username:</label>
+					<input name="username" /> 
+				</div>
+				
+				<div class="form-group">
+					<label>Password:</label>
+					<input type="password" />
+				</div>
+				
+				<div class="form-group">
+					<button class="btn btn-lg" id="loginerror" type="submit" onclick="LoginFunction()">Login</button> 
+					<p><a href="..//html/register.html">Register</a>  | <a target="_top" href="../html/forgotPassword.html">Forgot Password?</a> </p>
+				</div>
+				
+			</div>
+		</form>
+		
+</section>
+	</article>
+</main>
+<script src="../javascript/GravityPointsCodePen.js"></script>
+</body>
+</html>
