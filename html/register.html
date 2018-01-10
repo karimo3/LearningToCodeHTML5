@@ -5,9 +5,13 @@
 		<link rel="shortcut icon" href="../images/pic_bulbon.gif"/>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		
+		<script src="https://use.fontawesome.com/ac61c06dd6.js"></script>
+
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+		
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<link rel="stylesheet" type="text/css" href="../css/styles.css"/>
 	</head>
@@ -47,7 +51,7 @@
 	<div class="navbar navbar-inverse navbar-fixed-top" >
 		<header class="container">
 			<div class="navbar-header">
-				<a class="navbar-brand" href="./index.html">Kids Learn!</a>
+				<a class="navbar-brand" href="./index.html"> <i class="fa fa-lightbulb-o" aria-hidden="true"></i> Kids Learn!</a>
 				<button class="navbar-toggle" data-toggle="collapse" data-target="#menu">&#9776;</button>
 			</div>
 			<div id="menu" class="collapse navbar-collapse">
@@ -65,7 +69,7 @@
 </nav>
 
 <article class="content">
-	<form class="well">
+	<form class="well" style="background-color:#2d9162">
 			<div class="row">
 				<div class="col-md-3">
 					<div class="form-group">
@@ -73,13 +77,13 @@
 					</div>
 				
 					<div class="form-group">
-						<label> N/A:</label>
+						<label>Name:</label>
 						<input name="username" /> 
 					</div>
 					
 					<div class="form-group">
-						<label>N/A:</label>
-						<input type="" />
+						<label>Email:</label>
+						<input type="email" name="email" />
 					</div>
 					
 					<div class="form-group">
@@ -91,10 +95,35 @@
 			</div>
 		</form>
 
-		<div class="section">
-			<p> hellow </p>
+		<div class="">
+			<div class="">
+				<p> hello </p>
+			</div>
 		</div>
   
+		<!-- absolute and relative positioning chapter 1.3 -->
+		<table style="width: 100%; height: 100%; border: 1px solid black;">
+			<tr>
+				<td style="vertical-align: top; width: 80%">
+					<img id="orange1" src="../images/login.jpg"/>
+					<img id="orange2" src="../images/login.jpg"/>
+				</td>
+				<td style="vertical-align: top;">Left:
+					<input type="text" id="leftText"/><br/>
+					Top:
+					<input type="text" id="topText"/><br/>
+					Position:
+					<select id="positioning">
+						<option>relative</option>
+						<option>absolute</option>
+					</select><br/>
+					<input type="button" id="btnPosition" value="Update"/>
+				</td>
+			</tr>
+		</table>
+
+
+
 </article>
 
 

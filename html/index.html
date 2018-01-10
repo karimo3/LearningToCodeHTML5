@@ -6,6 +6,8 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		
+		<script src="https://use.fontawesome.com/ac61c06dd6.js"></script>
+
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -37,7 +39,7 @@
 				</div>
 				
 				<div class="form-group">
-					<button class="btn btn-lg" id="loginerror" type="submit" onclick="LoginFunction()">Login</button> 
+					<button class="btn btn-lg" id="loginerror" type="submit">Login</button> 
 					<p><a href="..//html/register.html">Register</a>  | <a target="_top" href="../html/forgotPassword.html">Forgot Password?</a> </p>
 				</div>
 				
@@ -53,7 +55,7 @@
 	<div class="navbar navbar-inverse navbar-fixed-top" >
 		<header class="container">
 			<div class="navbar-header">
-				<a class="navbar-brand" href="./index.html">Kids Learn!</a>
+				<a class="navbar-brand" href="./index.html"> <i class="fa fa-lightbulb-o" aria-hidden="true"></i> Kids Learn!</a>
 				<button class="navbar-toggle" data-toggle="collapse" data-target="#menu">&#9776;</button>
 			</div>
 			<div id="menu" class="collapse navbar-collapse">
@@ -130,25 +132,21 @@
 </section> <!-- end of wrapper-->
 
 
-
 <script src="../javascript/index.js"></script>
 
 <script>
-$(document).ready(function() {
-
-function loginerror(){
-    $("loginerror").click(function(){
-        $(this).html("<b>OOPS!</b>");
-    });
-}
-
-function
+	$( document ).ready(function() {
+		
+		$("#loginerror").click(function(){
+			$(this).html("<b>OOPS!</b>");
+			});
+	}
+</script>
 
 
 
 
 
-} <!--End of jQuery -->
-<script>
+//<!--End of jQuery -->
 </body>
 </html>

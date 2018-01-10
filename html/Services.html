@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>About Us</title>
+		<title>Services</title>
 		<link rel="shortcut icon" href="../images/pic_bulbon.gif"/>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		
+		
+		<script src="https://use.fontawesome.com/ac61c06dd6.js"></script>
+
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="../css/styles.css"/>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	</head>
 
@@ -52,7 +55,7 @@
 	<div class="navbar navbar-inverse navbar-fixed-top" >
 		<header class="container">
 			<div class="navbar-header">
-				<a class="navbar-brand" href="./index.html">Kids Learn!</a>
+				<a class="navbar-brand" href="./index.html"> <i class="fa fa-lightbulb-o" aria-hidden="true"></i> Kids Learn!</a>
 				<button class="navbar-toggle" data-toggle="collapse" data-target="#menu">&#9776;</button>
 			</div>
 			<div id="menu" class="collapse navbar-collapse">
@@ -73,15 +76,33 @@
 
 <article class="content">
 	<hgroup>
-		<h1><strong>OOPs! Page is not ready.</strong></h1>
+		<h1><strong>HTML5 Drag and Drop.</strong></h1>
 	</hgroup>
 
+	<div id="position">
+		<p>Where am I?</p>
+	</div>
+<!-- drag and drop demo -->
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<img id="drag1" src="../images/abcpic.jpg" height="200" width="200" draggable="true"
+ondragstart="drag(event)" style="border: 2px;">
 
 </article>
-		
+	
+
+
+
+
+
+
 <section class="prek">
 			<p><strong>Click</strong> <a href="http://www.nyc.gov/prek" target="_blank">Here</a> <strong>to register your child for pre-k</strong>.	</p>
 </section>
+
+
+
+
+
 
 <footer class="footer">
 				<p>
@@ -95,6 +116,6 @@
 </section> <!-- end of wrapper-->
 
 
-<script src="../javascript/myScript.js"></script>
+<script src="../javascript/index.js"></script>
 </body>
 </html>

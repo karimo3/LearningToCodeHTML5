@@ -114,9 +114,9 @@ th, td { padding: 10px;
 
 }
 
-input[type=text], input[type=password], textarea{
+/* input[type=text], input[type=password], textarea{
     width: auto;
-}
+} */
 
 label{
     font-weight: bold;
@@ -190,7 +190,8 @@ a:visited{
 }
 
  /* Style inputs with type="text", select elements and textareas */
-input[type=text], select, email, textarea {
+.contactform{
+   
     width: 100%; /* Full width */
     padding: 12px; /* Some padding */ 
     border: 1px solid #ccc; /* Gray border */
@@ -199,6 +200,7 @@ input[type=text], select, email, textarea {
     margin-top: 6px; /* Add a top margin */
     margin-bottom: 16px; /* Bottom margin */
     resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+
 }
 
 /* Style the submit button with a specific background color etc */
@@ -222,6 +224,35 @@ input[type=submit]:hover {
     background-color: #f2f2f2;
     padding: 10px;
 } 
+
+#div1 {
+    width: 250px;
+    height: 250px;
+    padding: 10px;
+    border: 1px solid #0e0d0d67;
+    text-align: function allowDrop(ev) {
+        ev.preventDefault();
+    }
+    
+    function drag(ev) {
+        ev.dataTransfer.setData("text", ev.target.id);
+    }
+    
+    function drop(ev) {
+        ev.preventDefault();
+        var data = ev.dataTransfer.getData("text");
+        ev.target.appendChild(document.getElementById(data));
+    } 
+
+}
+
+#position {
+    position: absolute;
+    border: 2px solid black;
+    
+    margin: 0 500px 20px 500px;
+    text-align: center;
+}
 
 
 
