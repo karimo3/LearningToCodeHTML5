@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html manifest="webApp.appcache">
+
+<head>
+    <title>Offline</title>
+    <link rel="shortcut icon" href="../images/klogo.jpg" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+
+    <script src="https://use.fontawesome.com/ac61c06dd6.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css" />
+</head>
+
+<body>
+    <!-- navbar is here  -->
+    <nav>
+            <div class="navbar navbar-inverse navbar-fixed-top">
+                <header class="container">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="./index.html">
+                            <i class="fa fa-lightbulb-o" aria-hidden="true"></i> Kids Learn!</a>
+                        <button class="navbar-toggle" data-toggle="collapse" data-target="#menu">&#9776;</button>
+                    </div>
+                    <div id="menu" class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav">
+                            <li>
+                                <a href="./index.html">Home</a>
+                            </li>
+                            <!-- <li><a href="./register.html">Register</a></li> -->
+                            <li>
+                                <a href="./About.html">Canvas</a>
+                            </li>
+                            <li>
+                                <a href="./Contact.html">Forms</a>
+                            </li>
+                            <li>
+                                <a href="./Services.html">Drag&Drop</a>
+                            </li>
+                            <li>
+                                <a href="./Offline.html">Offline</a>
+                            </li>
+                            <li class="active">
+                                    <a href="./UsingAjax.html">Using Ajax</a>
+                            </li>
+                            <li>
+                                <a href="./bootlayout.html">Layout</a>
+                            </li>
+                            <!-- <li><a href="./GravityPointsCodePenhtml.html">Gravity Points</a></li> -->
+                        </ul>
+                    </div>
+                </header>
+            </div>
+        </nav>
+    <section class="wrapper">
+        <section class="sidebar">
+
+            <form class="well">
+                <div class="row">
+                    <div class="form-group">
+                        <h3>
+                            <u>Login</u>:</h3>
+                    </div>
+
+                    <div class="form-group">
+                        <label> Username:</label>
+                        <input name="username" />
+                    </div>
+
+                    <div class="form-group">
+                        <label>Password:</label>
+                        <input type="password" />
+                    </div>
+
+                    <div class="form-group">
+                        <button class="btn btn-lg" id="loginerror" type="submit">Login</button>
+                        <p>
+                            <a href="..//html/register.html">Register</a> |
+                            <a target="_top" href="../html/forgotPassword.html">Forgot Password?</a>
+                        </p>
+                    </div>
+
+                </div>
+            </form>
+
+        </section>
+
+
+        <main>
+            
+
+            <section class="content">
+                <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+                    <i class="glyphicon glyphicon-align-left"></i>
+                </button>
+                
+                <form id="form-container" class="form-container">
+                        <label for="street">Street: </label><input type="text" id="street" value="">
+                        <label for="city">City: </label><input type="text" id="city" value="">
+                        <button id="submit-btn">Submit</button>
+                    </form>
+                
+                    <hr>
+                
+                    <h2 id="greeting" class="greeting">Where do you want to live?</h2>
+                    
+                
+                     <!-- <div class="wikipedia-container">
+                        <h3 id="wikipedia-header">Relevant Wikipedia Links</h3> -->
+                        <ul id="wikipedia-links">Type in an address above and find relevant Wikipedia articles here!</ul>
+                    <!-- </div> -->
+                
+                
+                    <!-- <div class="nytimes-container">
+                        <h3 id="nytimes-header">New York Times Articles</h3> -->
+                        <ul id="nytimes-articles" class="article-list">What's going on in your new city? Enter an address and hit submit and the NY Times will tell you here!</ul>
+                    <!-- </div>  -->
+                    <div class="container">
+                        <div id="strimg"></div>
+                    </div>
+            </section>
+           
+        </main>
+        
+        <footer class="footer">
+            <p>
+                Obaid
+                <abbr title="Obaid Corporation">OC</abbr>
+                &copy;1991 - 2016
+            </p>
+        </footer>
+    </section>
+    <!-- end of wrapper-->
+
+    <!-- JS Code and Libraries-->
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="../javascript/ajaxscript.js"></script>
+    <script src="../javascript/index.js"></script>
+
+
+    <script>
+        $(document).ready(function () {
+
+
+        });
+    </script>
+</body>
+</html>

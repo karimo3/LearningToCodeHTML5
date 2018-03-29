@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html manifest="webApp.appcache">
+
+<head>
+    <title>Offline</title>
+    <link rel="shortcut icon" href="../images/klogo.jpg" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+
+    <script src="https://use.fontawesome.com/ac61c06dd6.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css" />
+</head>
+
+<body>
+    <main>
+        <section class="wrapper">
+            <section class="sidebar">
+
+                <form class="well">
+                    <div class="row">
+                        <div class="form-group">
+                            <h3>
+                                <u>Login</u>:</h3>
+                        </div>
+
+                        <div class="form-group">
+                            <label> Username:</label>
+                            <input name="username" />
+                        </div>
+
+                        <div class="form-group">
+                            <label>Password:</label>
+                            <input type="password" />
+                        </div>
+
+                        <div class="form-group">
+                            <button class="btn btn-lg" id="loginerror" type="submit">Login</button>
+                            <p>
+                                <a href="..//html/register.html">Register</a> |
+                                <a target="_top" href="../html/forgotPassword.html">Forgot Password?</a>
+                            </p>
+                        </div>
+
+                    </div>
+                </form>
+
+            </section>
+
+
+            <!-- navbar is here  -->
+            <nav>
+                <div class="navbar navbar-inverse navbar-fixed-top">
+                    <header class="container">
+                        <div class="navbar-header">
+                            <a class="navbar-brand" href="./index.html">
+                                <i class="fa fa-lightbulb-o" aria-hidden="true"></i> Kids Learn!</a>
+                            <button class="navbar-toggle" data-toggle="collapse" data-target="#menu">&#9776;</button>
+                        </div>
+                        <div id="menu" class="collapse navbar-collapse">
+                            <ul class="nav navbar-nav">
+                                <li class="dropdown">
+                                    <a href="./index.html">Home</a>
+                                </li>
+                                <!-- <li><a href="./register.html">Register</a></li> -->
+                                <li>
+                                    <a href="./About.html">Canvas</a>
+                                </li>
+                                <li>
+                                    <a href="./Contact.html">Forms</a>
+                                </li>
+                                <li>
+                                    <a href="./Services.html">Drag&Drop</a>
+                                </li>
+                                <li class="active">
+                                    <a href="./Offline.html">Offline</a>
+                                </li>
+                                <li>
+                                    <a href="./UsingAjax.html">Using Ajax</a>
+                                </li>
+                                <li>
+                                    <a href="./bootlayout.html">Layout</a>
+                                </li>
+                                <!-- <li><a href="./GravityPointsCodePenhtml.html">Gravity Points</a></li> -->
+                            </ul>
+                        </div>
+                    </header>
+                </div>
+            </nav>
+
+            <section class="content">
+                <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+                    <i class="glyphicon glyphicon-align-left"></i>
+                </button>
+                <h4>Manifest File</h4>
+
+                <pre class="">
+                    <strong>CACHE MANIFEST</strong>
+                    # My Web Application Cache Manifest
+                    # v.1.0.0 
+                    # 
+                    # Cache Section. All Cached items. 
+                    CACHE 
+                    /PAGES/PAGE1.html
+                    /PAGES/PAGE2.html
+
+                    #Required Network resources
+                    NETWORK: 
+                    login.html
+
+                    #Fallback items.
+                    FALLBACK 
+                    login.html fallback-login.html
+                <p>
+                    The first line in a manifest must be CACHE MANIFEST.    
+                    The CACHE section lists all the resources that must be cached offline.
+                    This must include all CSS files, JPG files, video and audio files, and any other resources required for the page to function correctly.
+                </p>
+
+                var appCache = window.applicationCache;
+
+                </pre>
+                <br/>
+                <p>Click the button to get your coordinates.</p>
+                <button onclick="getLocation()">Try It</button>
+                <p id="demo"></p>
+            </section>
+
+
+            <footer class="footer">
+                <p>
+                    Obaid
+                    <abbr title="Obaid Corporation">OC</abbr>
+                    &copy;1991 - 2016
+                </p>
+            </footer>
+        </section> <!-- end of wrapper-->
+    </main>
+    <!-- JS Code and Libraries-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="../javascript/index.js"></script>
+
+    <script>
+        $(document).ready(function () {
+
+            // var appCache = window.applicationCache;
+            // appCache.update();
+            // var demo = $("#demo");
+            // var navigate = window.navigator.geolocation;
+            // var posOptions = {enableHighAccuracy: true, timeout: 45000};
+            // //navigate.clearWatch();
+            // navigate.getCurrentPosition(successPosition, posOptions);
+
+            // var successPosition = function(pos){
+            //     alert (pos);
+            //     var sp = demo.text("Latitude: " + pos.coords.latitude + 
+            //                         "Longitude: " + pos.coords.longitude);
+            // }
+
+            // var errorPosition = function(err){
+            //     alert (err);
+            // }
+
+
+        });
+    </script>
+
+</body>
+
+</html>

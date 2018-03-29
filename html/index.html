@@ -2,26 +2,19 @@
 <html>
 	<head>
 		<title>Kids Learn</title>
-		<link rel="shortcut icon" href="../images/pic_bulbon.gif"/>
+		<link rel="shortcut icon" href="../images/klogo.jpg"/>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta charset="UTF-8"> 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		
 		<script src="https://use.fontawesome.com/ac61c06dd6.js"></script>
-
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-		
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-		
 		<link rel="stylesheet" type="text/css" href="../css/styles.css"/>
-		
 	</head>
 
-
-
 <body>
+<section class="wrapper">
+
 <section class="sidebar">
-		
 		<form class="well">
 			<div class="row">
 				<div class="form-group">
@@ -39,42 +32,58 @@
 				</div>
 				
 				<div class="form-group">
-					<button class="btn btn-lg" id="loginerror" type="submit">Login</button> 
-					<p><a href="..//html/register.html">Register</a>  | <a target="_top" href="../html/forgotPassword.html">Forgot Password?</a> </p>
+					<button class="btn btn-lg" id="loginerror">Login</button> 
+					<p>
+						<a href="..//html/register.html">Register</a>  | 
+						<a target="_top" href="../html/forgotPassword.html">Forgot Password?</a>
+					</p>
 				</div>
 				
 			</div>
 		</form>
 		
 </section>
-<section class="wrapper">	
 
+	
 <main>
-
 <nav>
 	<div class="navbar navbar-inverse navbar-fixed-top" >
 		<header class="container">
 			<div class="navbar-header">
 				<a class="navbar-brand" href="./index.html"> <i class="fa fa-lightbulb-o" aria-hidden="true"></i> Kids Learn!</a>
-				<button class="navbar-toggle" data-toggle="collapse" data-target="#menu">&#9776;</button>
+				<!-- <button class="navbar-toggle" data-toggle="collapse" data-target="#menu">&#9776;</button> -->
 			</div>
 			<div id="menu" class="collapse navbar-collapse">
 				<ul class="nav navbar-nav">
 					<li class="active"><a href="./index.html">Home</a></li>
-					<li><a href="./register.html">Register</a></li>
-					<li><a href="./About.html">About</a></li>
-					<li ><a href="./Contact.html">Contact</a></li>
-					<li><a href="./Services.html">Services</a></li>
-					<li><a href="./GravityPointsCodePenhtml.html">Gravity Points</a></li>
+					<!-- <li><a href="./register.html">Register</a></li> -->
+					<li><a href="./About.html">Canvas</a></li>
+					<li ><a href="./Contact.html">Forms</a></li>
+					<li><a href="./Services.html">Drag&Drop</a></li>
+					<li>
+						<a href="./Offline.html">Offline</a>
+					</li>
+					<li>
+							<a href="./UsingAjax.html">Using Ajax</a>
+					</li>
+					<li><a href="./bootlayout.html">Layout</a></li>
+					<!-- <li><a href="./GravityPointsCodePenhtml.html">Gravity Points</a></li> -->
 				</ul>
 			</div>
 		</header>
 	</div>
 </nav>
+
 <article class="content">
+		<div>
+			<button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+				<i class="glyphicon glyphicon-align-left"></i>
+				
+			</button>
+		<div>
 		<figure>
-			<img id="myImage" onclick="changeImage()" src="../images/pic_bulboff.gif" width="80" height="180" alt="Bulb Off">
-			<figcaption style="color:yellow" onclick="changeImage()">Let there be light!</figcaption>
+			<img id="myImage" src="../images/pic_bulboff.gif" width="80" height="180" alt="Bulb Off" />
+			<figcaption style="color:yellow">Let there be light!</figcaption>
 		</figure>
 		<header>
 			<hgroup>
@@ -86,41 +95,42 @@
 			<p>Name : <input type="text" ng-model="name" placeholder="Enter name here"></p>
 			<h1 style="color:green">Hello {{name}}!</h1>
 		</div>
-	<div class="h3">	
-		<p class="animation1">	Welcome to the fun filled website that promotes kids to be active and learn!</p>
 
-		<p class="animation1">	We are here to help with school enrollment, finding libraries,  </p>
-		
-		<details>
-		<summary style="color:blue"> Videos</summary>
-			<iframe width="400" height="300"
-			src="https://www.youtube.com/embed/d2Ow6qQlQtM">
-			</iframe>
-		</details>
-		
-		<p class="animation1">	Pictures...</p>
+		<div class="h3">	
+			<p class="animation1">	Welcome to the fun filled website that promotes kids to be active and learn!</p>
 
-		<p class="animation1">	Services...	</p>
+			<p class="animation1">	We are here to help with school enrollment, finding libraries, and provide homework help!  </p>
+			
+			<details>
+				<summary style="color:blue"> Videos</summary>
+				<iframe width="400" height="300"
+				src="https://www.youtube.com/embed/d2Ow6qQlQtM">
+				</iframe>
+			</details>
+			
+			<p>	Pictures.....</p>
 
-		<p class="animation1">	Work...	</p>
+			<p>	Services....	</p>
 
-		<p class="animation1">	Activities...	</p>
-	</div>	
+			<p>	Work...	</p>
+
+			<p>	Activities...	</p>
+			
 	
-	<div>
-		<details>
-			<summary style="color: blue"> Events </summary>
-			<p> Come join us.</p>
-		</details>
-	</div>
+			<details>
+				<summary style="color: blue"> Events </summary>
+				<p> Come join us.</p>
+			</details>
+		</div>
 	
+	<section>
+		<p><strong>Click</strong> <a href="http://www.nyc.gov/prek" target="_blank">Here</a> <strong>to register your child for pre-k</strong>.	</p>
+	</section>
 </article>
 </main>
 
 	
-<section class="prek">
-	<p><strong>Click</strong> <a href="http://www.nyc.gov/prek" target="_blank">Here</a> <strong>to register your child for pre-k</strong>.	</p>
-</section>
+
 
 <footer class="footer">
 	<p>
@@ -131,22 +141,19 @@
 </footer>
 </section> <!-- end of wrapper-->
 
-
+<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 <script src="../javascript/index.js"></script>
 
-<script>
-	$( document ).ready(function() {
+<script>//<!--Beginning of jQuery -->
+	$(document).ready(function(){
+		$(".footer").click(function(){
+			$(this).fadeOut(3000);
+		});
+
 		
-		$("#loginerror").click(function(){
-			$(this).html("<b>OOPS!</b>");
-			});
-	}
-</script>
+	});	
+</script><!--End of jQuery -->
 
-
-
-
-
-//<!--End of jQuery -->
 </body>
 </html>

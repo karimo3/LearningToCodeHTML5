@@ -1,121 +1,215 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Services</title>
-		<link rel="shortcut icon" href="../images/pic_bulbon.gif"/>
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		
-		
-		<script src="https://use.fontawesome.com/ac61c06dd6.js"></script>
 
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="../css/styles.css"/>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	</head>
+<head>
+	<title>Services</title>
+	<link rel="shortcut icon" href="../images/klogo.jpg" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+	<script src="../javascript/modernizr-custom.js"></script>
+	<script src="https://use.fontawesome.com/ac61c06dd6.js"></script>
 
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<link rel="stylesheet" type="text/css" href="../css/styles.css" />
+</head>
 
 <body>
-
-<section class="sidebar">
-		
-		<form class="well">
-			<div class="row">
-				<div class="form-group">
-					<h3><u>Login</u>:</h3>
-				</div>
-			
-				<div class="form-group">
-					<label> Username:</label>
-					<input name="username" /> 
-				</div>
-				
-				<div class="form-group">
-					<label>Password:</label>
-					<input type="password" />
-				</div>
-				
-				<div class="form-group">
-					<button class="btn btn-lg" id="loginerror" type="submit" onclick="LoginFunction()">Login</button> 
-					<p><a href="..//html/register.html">Register</a>  | <a target="_top" href="../html/forgotPassword.html">Forgot Password?</a> </p>
-				</div>
-				
+	<main>
+		<nav>
+			<div class="navbar navbar-inverse navbar-fixed-top">
+				<header class="container">
+					<div class="navbar-header">
+						<a class="navbar-brand" href="./index.html">
+							<i class="fa fa-lightbulb-o" aria-hidden="true"></i> Kids Learn!</a>
+						<button class="navbar-toggle" data-toggle="collapse" data-target="#menu">&#9776;</button>
+					</div>
+					<div id="menu" class="collapse navbar-collapse">
+						<ul class="nav navbar-nav">
+							<li>
+								<a href="./index.html">Home</a>
+							</li>
+							<!-- <li><a href="./register.html">Register</a></li> -->
+							<li>
+								<a href="./About.html">Canvas</a>
+							</li>
+							<li>
+								<a href="./Contact.html">Forms</a>
+							</li>
+							<li class="active">
+								<a href="./Services.html">Drag&Drop</a>
+							</li>
+							<li>
+								<a href="./Offline.html">Offline</a>
+							</li>
+							<li>
+								<a href="./UsingAjax.html">Using Ajax</a>
+							</li>
+							<li>
+                                <a href="./bootlayout.html">Layout</a>
+                            </li>
+							<!-- <li><a href="./GravityPointsCodePenhtml.html">Gravity Points</a></li> -->
+						</ul>
+					</div>
+				</header>
 			</div>
-		</form>
-		
-</section>
-<section class="wrapper">	
+		</nav>
+		<section class="wrapper">
+			<aside class="sidebar">
 
-<main>
+				<form class="well">
+					<div class="row">
+						<div class="form-group">
+							<h3>
+								<u>Login</u>:</h3>
+						</div>
 
-<nav>
-	<div class="navbar navbar-inverse navbar-fixed-top" >
-		<header class="container">
-			<div class="navbar-header">
-				<a class="navbar-brand" href="./index.html"> <i class="fa fa-lightbulb-o" aria-hidden="true"></i> Kids Learn!</a>
-				<button class="navbar-toggle" data-toggle="collapse" data-target="#menu">&#9776;</button>
-			</div>
-			<div id="menu" class="collapse navbar-collapse">
-				<ul class="nav navbar-nav">
-					<li><a href="./index.html">Home</a></li>
-					<li><a href="./register.html">Register</a></li>
-					<li><a href="./About.html">About</a></li>
-					<li><a href="./Contact.html">Contact</a></li>
-					<li class="active"><a href="./Services.html">Services</a></li>
-					<li><a href="./GravityPointsCodePenhtml.html">Gravity Points</a></li>
-				</ul>
-			</div>
-		</header>
-	</div>
-</nav>
-	
+						<div class="form-group">
+							<label> Username:</label>
+							<input name="username" />
+						</div>
 
+						<div class="form-group">
+							<label>Password:</label>
+							<input type="password" />
+						</div>
 
-<article class="content">
-	<hgroup>
-		<h1><strong>HTML5 Drag and Drop.</strong></h1>
-	</hgroup>
+						<div class="form-group">
+							<button class="btn btn-lg" id="loginerror" type="submit" onclick="LoginFunction()">Login</button>
+							<p>
+								<a href="..//html/register.html">Register</a> |
+								<a target="_top" href="../html/forgotPassword.html">Forgot Password?</a>
+							</p>
+						</div>
 
-	<div id="position">
-		<p>Where am I?</p>
-	</div>
-<!-- drag and drop demo -->
-<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-<img id="drag1" src="../images/abcpic.jpg" height="200" width="200" draggable="true"
-ondragstart="drag(event)" style="border: 2px;">
+					</div>
+				</form>
 
-</article>
-	
+			</aside>
 
+			<article class="content">
+				<div>
+					<button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+						<i class="glyphicon glyphicon-align-left"></i>
 
+					</button>
+					<div>
+						<hgroup>
+							<h1>
+								<strong>HTML5 Drag and Drop.</strong>
+							</h1>
+						</hgroup>
 
+						<!-- drag and drop demo -->
+						<div id="source-container" data-role="drag-drop-target">
+							<img id="snapshot" src="../images/abcpic.jpg" class="img-responsive" height="200" width="200" draggable="true" />
+						</div>
+						<div id="target-container" data-role="drag-drop-target"></div>
+						
 
+						<h1>jQuery ajax() Method</h1>
 
+						<p id="p1">Let jQuery AJAX Change This Text</p>
+						<button id="b1">Get Content</button>
 
-<section class="prek">
-			<p><strong>Click</strong> <a href="http://www.nyc.gov/prek" target="_blank">Here</a> <strong>to register your child for pre-k</strong>.	</p>
-</section>
+			</article>
 
-
-
-
-
-
-<footer class="footer">
+			<section class="container">
 				<p>
-					Obaid 
+					<strong>Click</strong>
+					<a href="http://www.nyc.gov/prek" target="_blank">Here</a>
+					<strong>to register your child for pre-k</strong>. </p>
+			</section>
+
+			<footer class="footer">
+				<p>
+					Obaid
 					<abbr title="Obaid Corporation">OC</abbr>
-						&copy;1991 - 2016
+					&copy;1991 - 2016
 				</p>
-</footer>
+			</footer>
+		</section>
+	</main>
+	<!-- end of wrapper-->
 
-</main>
-</section> <!-- end of wrapper-->
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	 crossorigin="anonymous">
+	</script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="../javascript/index.js"></script>
 
+	<script>
+		$(document).ready(function () {
 
-<script src="../javascript/index.js"></script>
+			//drag and drop code
+			var dragStart = function (e) {
+				// IE doesn't support text/plain
+				try {
+					e.dataTransfer.setData('text/plain', e.target.id);
+				} catch (ex) {
+					e.dataTransfer.setData('Text', e.target.id);
+				}
+			};
+
+			var cancel = function (e) {
+				if (e.preventDefault) e.preventDefault();
+				if (e.stopPropagation) e.stopPropagation();
+				return false;
+			};
+
+			var dropped = function (e) {
+				var id;
+				cancel(e);
+
+				try {
+					id = e.dataTransfer.getData('text/plain');
+				} catch (ex) {
+					id = e.dataTransfer.getData('Text');
+				}
+
+				e.target.appendChild(document.querySelector('#' + id));
+			};
+
+			var img = document.querySelector('#snapshot');
+			img.addEventListener('dragstart', dragStart, false);
+
+			var target = document.querySelector('#target-container');
+			target.addEventListener('drop', dropped, false);
+			target.addEventListener('dragenter', cancel, false);
+			target.addEventListener('dragover', cancel, false);
+			//end: drag and drop code
+
+			if (Modernizr.geolocation) {
+				console.log("geolocation API");
+				var x = $("#demo");
+				var y = $("#getGeo");
+				y.click(function () {
+					if (navigator.geolocation) {
+						console.log(navigator.geolocation.getCurrentPosition(showPos));
+					}
+					else {
+						x.text("Geolocation is not supported by this browser");
+					}
+				});
+				var showPos = function (position) {
+					y.text = ("Latitude: " + position.coords.latitude + "<br>Longitute: " + position.coords.longitude);
+				}
+
+			}//modernizr
+
+			$("#b1").click(function () {
+				$.ajax(
+					{
+						url: "D:\web_practice\kidsLearn2-master\html\demo_test.txt",
+						success: function (result) {
+							$("#p1").html(result);
+						}
+					}
+				);
+			});
+		});
+	</script>
 </body>
 </html>
