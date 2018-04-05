@@ -8,11 +8,9 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-	<script src="https://use.fontawesome.com/ac61c06dd6.js"></script>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
 	<link rel="stylesheet" type="text/css" href="../css/styles.css" />
 </head>
 
@@ -50,8 +48,8 @@
 								<a href="./UsingAjax.html">Using Ajax</a>
 							</li>
 							<li>
-                                <a href="./bootlayout.html">Layout</a>
-                            </li>
+								<a href="./bootlayout.html">Layout</a>
+							</li>
 							<!-- <li><a href="./GravityPointsCodePenhtml.html">Gravity Points</a></li> -->
 						</ul>
 					</div>
@@ -70,7 +68,7 @@
 
 						<div class="form-group">
 							<label> Username:</label>
-							<input name="username" />
+							<input name="username" placeholder="Karimo3" />
 						</div>
 
 						<div class="form-group">
@@ -84,7 +82,7 @@
 						</div>
 
 						<div class="form-group">
-							<button class="btn btn-lg" id="loginerror" type="submit">Login</button>
+							<input class="btn btn-primary" id="loginerror" type="submit" value="Login" />
 							<p>
 								<a href="..//html/register.html">Register</a> |
 								<a target="_top" href="../html/forgotPassword.html">Forgot Password?</a>
@@ -112,11 +110,11 @@
 						<div class="well" style="background-color:rgba(195, 216, 213, 0.897)">
 							<form method="post">
 								<div class="col-md-3-offset" label-for="fname">First Name:</label>
-									<input type="text" id="fname" name="firstname" placeholder="Your name.." required onfocus="this.value=''" autofocus class="form-control"
-									/>
+									<input type="text" id="fname" name="firstname" placeholder="Your first name.." required onfocus="this.value=''" autofocus
+									 class="form-control" />
 
 									<label for="lname">Last Name:</label>
-									<input type="text" id="lname" name="lastname" placeholder="Your last name.." required class="form-control" />
+									<input type="text" id="lname" name="lastname" placeholder="Your last name.." class="form-control" required/>
 
 									<label for="email">Email:</label>
 									<input type="email" id="email" name="email" required placeholder="Your Email.." class="form-control" />
@@ -133,36 +131,59 @@
 
 									<div class="push-down-top">
 										<button class="btn btn-link">Cancel</button>
-										<input type="submit" class="btn btn-default" value="Save" />
+										<input type="submit" class="btn btn-primary" value="Submit" />
 									</div>
 								</div>
 							</form>
 						</div>
 					</div>
 
-					<section class="col-md-3">
+					<section class="col-md-6">
 						<p>
 							<strong>Click</strong>
 							<a href="http://www.nyc.gov/prek" target="_blank">Here</a>
 							<strong>to register your child for pre-k</strong>. </p>
 					</section>
 			</article>
-
-
-			<footer class="footer">
+		</section>
+		<!-- end of wrapper-->
+		<footer class="footer">
+			<div class="container">
 				<p>
 					Obaid
 					<abbr title="Obaid Corporation">OC</abbr>
-					&copy;1991 - 2018
+					&copy;1991 - 2016
 				</p>
-			</footer>
-
-		</section>
-		<!-- end of wrapper-->
+			</div>
+		</footer>
 	</main>
 
 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/ac61c06dd6.js"></script>
 	<script src="../javascript/index.js"></script>
+
+	<script>
+		$(document).ready(function () {
+			//begin
+			var html = ' ';
+			var val = $('img').attr('width', '300');
+
+
+
+
+
+
+
+
+
+		});//end
+
+
+	</script>
+
+
 </body>
 
 </html>
