@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html manifest="KidsLearn-manifest.aspx">
 
 <head>
 	<title>Services</title>
@@ -48,8 +48,8 @@
 								<a href="./UsingAjax.html">Using Ajax</a>
 							</li>
 							<li>
-                                <a href="./bootlayout.html">Layout</a>
-                            </li>
+								<a href="./bootlayout.html">Layout</a>
+							</li>
 							<!-- <li><a href="./GravityPointsCodePenhtml.html">Gravity Points</a></li> -->
 						</ul>
 					</div>
@@ -59,7 +59,7 @@
 		<section class="wrapper">
 			<aside class="sidebar">
 
-				<form class="well">
+				<form class="well" method="POST">
 					<div class="row">
 						<div class="form-group">
 							<h3>
@@ -77,7 +77,7 @@
 						</div>
 
 						<div class="form-group">
-							<button class="btn btn-lg" id="loginerror" type="submit" onclick="LoginFunction()">Login</button>
+							<button class="btn btn-primary" id="loginerror">Login</button>
 							<p>
 								<a href="..//html/register.html">Register</a> |
 								<a target="_top" href="../html/forgotPassword.html">Forgot Password?</a>
@@ -95,7 +95,7 @@
 						<i class="glyphicon glyphicon-align-left"></i>
 
 					</button>
-					<div>
+					<div class="container-fluid">
 						<hgroup>
 							<h1>
 								<strong>HTML5 Drag and Drop.</strong>
@@ -107,12 +107,14 @@
 							<img id="snapshot" src="../images/abcpic.jpg" class="img-responsive" height="200" width="200" draggable="true" />
 						</div>
 						<div id="target-container" data-role="drag-drop-target"></div>
-						
+
 
 						<h1>jQuery ajax() Method</h1>
 
 						<p id="p1">Let jQuery AJAX Change This Text</p>
 						<button id="b1">Get Content</button>
+					</div>
+
 
 			</article>
 
@@ -122,17 +124,18 @@
 					<a href="http://www.nyc.gov/prek" target="_blank">Here</a>
 					<strong>to register your child for pre-k</strong>. </p>
 			</section>
-
-			<footer class="footer">
+		</section>
+		<!-- end of wrapper-->
+		<footer class="footer">
+			<div class="container">
 				<p>
 					Obaid
 					<abbr title="Obaid Corporation">OC</abbr>
 					&copy;1991 - 2016
 				</p>
-			</footer>
-		</section>
+			</div>
+		</footer>
 	</main>
-	<!-- end of wrapper-->
 
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
 	 crossorigin="anonymous">
@@ -142,6 +145,7 @@
 
 	<script>
 		$(document).ready(function () {
+
 
 			//drag and drop code
 			var dragStart = function (e) {
@@ -199,17 +203,38 @@
 
 			}//modernizr
 
-			$("#b1").click(function () {
+
+			function jsonCallback(json) {
+				console.log(json);
+			}
+			$("#b1").on('click', function () {
 				$.ajax(
 					{
-						url: "D:\web_practice\kidsLearn2-master\html\demo_test.txt",
+						url: "http://run.plnkr.co/plunks/v8xyYN64V4nqCshgjKms/data-2.json",
+						// url: "https://github.com/dotnet/core/blob/master/release-notes/download-archives/2.0.0-preview2-download.md",
+						type: 'GET',
+						crossDomain: true,
+						dataType: "jsonp",
 						success: function (result) {
+							var pForm = $.parseJSON(result);
+
 							$("#p1").html(result);
+							$("#b1").hide();
 						}
-					}
-				);
+					});
 			});
-		});
+
+
+
+
+
+
+
+
+
+
+		});//end of jQuery
 	</script>
 </body>
+
 </html>

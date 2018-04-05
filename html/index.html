@@ -52,15 +52,14 @@
 		</div>
 	</nav>
 	<section class="wrapper">
-
 		<section class="sidebar">
-			<form class="well">
+			<form class="well" method="POST">
 				<div class="row">
 					<div class="form-group">
 						<h3>
 							<u>Login</u>:</h3>
 					</div>
-
+					
 					<div class="form-group">
 						<label> Username:</label>
 						<input name="username" />
@@ -78,25 +77,21 @@
 							<a target="_top" href="../html/forgotPassword.html">Forgot Password?</a>
 						</p>
 					</div>
-
 				</div>
 			</form>
-
 		</section>
 
 
 		<main>
-
-
 			<article class="content">
 				<div>
-					<button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn" >
+					<button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
 						<i class="glyphicon glyphicon-align-left"></i>
 
 					</button>
 					<div>
 						<figure>
-							<img id="myImage" src="../images/pic_bulboff.gif" width="80" height="180" alt="Bulb Off" />
+							<img id="myImage" src="../images/pic_bulboff.gif" onclick='changeImage()' width="80" height="180" alt="Bulb Off" />
 							<figcaption style="color:yellow">Let there be light!</figcaption>
 						</figure>
 						<header>
@@ -147,21 +142,19 @@
 								<strong>to register your child for pre-k</strong>. </p>
 						</section>
 			</article>
-		</main>
-
-
-
-
-		<footer class="footer">
-			<p>
-				Obaid
-				<abbr title="Obaid Corporation">OC</abbr>
-				&copy;1991 - 2017
-			</p>
-		</footer>
 	</section>
 	<!-- end of wrapper-->
 
+	<footer class="footer">
+		<div class="container">
+			<p>
+				Obaid
+				<abbr title="Obaid Corporation">OC</abbr>
+				&copy;1991 - 2016
+			</p>
+		</div>
+	</footer>
+	</main>
 	<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 	<script src="../javascript/index.js"></script>
@@ -176,6 +169,9 @@
 					top = ($(window).height() / 3) - (600 / 3),
 					popup = window.open("..//html/register.html", "loginerror", "width=900, height=600, top=" + top + ", left=" + left);
 			});
+
+
+
 
 		});	
 	</script>

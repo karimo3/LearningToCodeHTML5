@@ -15,9 +15,48 @@
 
 <body>
     <main>
+        <!-- navbar is here  -->
+        <nav>
+            <div class="navbar navbar-inverse navbar-fixed-top">
+                <header class="container">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="./index.html">
+                            <i class="fa fa-lightbulb-o" aria-hidden="true"></i> Kids Learn!</a>
+                        <button class="navbar-toggle" data-toggle="collapse" data-target="#menu">&#9776;</button>
+                    </div>
+                    <div id="menu" class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="./index.html" title="index.html">Home</a>
+                            </li>
+                            <li class="separator visible-md visible-lg">|</li>
+                            <!-- <li><a href="./register.html">Register</a></li> -->
+                            <li title="About.html">
+                                <a href="./About.html">Canvas</a>
+                            </li>
+                            <li>
+                                <a href="./Contact.html">Forms</a>
+                            </li>
+                            <li>
+                                <a href="./Services.html">Drag&Drop</a>
+                            </li>
+                            <li class="active">
+                                <a href="./Offline.html">Offline</a>
+                            </li>
+                            <li>
+                                <a href="./UsingAjax.html">Using Ajax</a>
+                            </li>
+                            <li>
+                                <a href="./bootlayout.html">Layout</a>
+                            </li>
+                            <!-- <li><a href="./GravityPointsCodePenhtml.html">Gravity Points</a></li> -->
+                        </ul>
+                    </div>
+                </header>
+            </div>
+        </nav>
         <section class="wrapper">
             <section class="sidebar">
-
                 <form class="well">
                     <div class="row">
                         <div class="form-group">
@@ -36,7 +75,7 @@
                         </div>
 
                         <div class="form-group">
-                            <button class="btn btn-lg" id="loginerror" type="submit">Login</button>
+                            <button class="btn btn-primary" id="loginerror" type="submit">Login</button>
                             <p>
                                 <a href="..//html/register.html">Register</a> |
                                 <a target="_top" href="../html/forgotPassword.html">Forgot Password?</a>
@@ -45,52 +84,10 @@
 
                     </div>
                 </form>
-
             </section>
 
-
-            <!-- navbar is here  -->
-            <nav>
-                <div class="navbar navbar-inverse navbar-fixed-top">
-                    <header class="container">
-                        <div class="navbar-header">
-                            <a class="navbar-brand" href="./index.html">
-                                <i class="fa fa-lightbulb-o" aria-hidden="true"></i> Kids Learn!</a>
-                            <button class="navbar-toggle" data-toggle="collapse" data-target="#menu">&#9776;</button>
-                        </div>
-                        <div id="menu" class="collapse navbar-collapse">
-                            <ul class="nav navbar-nav">
-                                <li class="dropdown">
-                                    <a href="./index.html">Home</a>
-                                </li>
-                                <!-- <li><a href="./register.html">Register</a></li> -->
-                                <li>
-                                    <a href="./About.html">Canvas</a>
-                                </li>
-                                <li>
-                                    <a href="./Contact.html">Forms</a>
-                                </li>
-                                <li>
-                                    <a href="./Services.html">Drag&Drop</a>
-                                </li>
-                                <li class="active">
-                                    <a href="./Offline.html">Offline</a>
-                                </li>
-                                <li>
-                                    <a href="./UsingAjax.html">Using Ajax</a>
-                                </li>
-                                <li>
-                                    <a href="./bootlayout.html">Layout</a>
-                                </li>
-                                <!-- <li><a href="./GravityPointsCodePenhtml.html">Gravity Points</a></li> -->
-                            </ul>
-                        </div>
-                    </header>
-                </div>
-            </nav>
-
             <section class="content">
-                <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+                <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn" title="Navigate Sidebar">
                     <i class="glyphicon glyphicon-align-left"></i>
                 </button>
                 <h4>Manifest File</h4>
@@ -119,26 +116,46 @@
                 </p>
 
                 var appCache = window.applicationCache;
-
+                <p>
+                    App Cache status values:
+                    <i>Uncached: </i> web app isn't associated with an application manifest. 
+                    <i>Idle: </i>the caching activity is being checked for updates.  
+                    <i>Checking: </i>the app manifest is being checked for updates.
+                    <i>Downloading: </i> the resources in the manifest are being downloaded.
+                    <i>UpdateReady: </i> the resources listed in the manifest have been successfully downloaded.
+                    <i>Obsolete: </i> the manifest can no longer be downloaded, so the app cache is being deleted.
+                </p>
+                <p>
+                    After the Cache Status is known: 
+                    <i>swapCache: </i> indicates that the cache can be replaced with a newer version.
+                    <i>update: </i> tells the browser to update the cache if an update is available.
+                </p>
+                <b>the call to <i>update</i> method is asynchoronous. Therefore, you must handle the <i>onupdateready()</i> event to determinewhen the update has completed the download process.</b>
                 </pre>
+                <br/>
+
+                <button id="onlineStatus">Online Status</button>
                 <br/>
                 <p>Click the button to get your coordinates.</p>
                 <button onclick="getLocation()">Try It</button>
                 <p id="demo"></p>
             </section>
 
+        </section>
+        <!-- end of wrapper-->
 
-            <footer class="footer">
+        <footer class="footer">
+            <div class="container">
                 <p>
                     Obaid
                     <abbr title="Obaid Corporation">OC</abbr>
                     &copy;1991 - 2016
                 </p>
-            </footer>
-        </section> <!-- end of wrapper-->
+            </div>
+        </footer>
     </main>
     <!-- JS Code and Libraries-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="../javascript/index.js"></script>
 
@@ -164,6 +181,15 @@
             // }
 
 
+            var isOnLine, isOffline, box;
+            var messages = [];
+
+            var reportOnlineStatus =
+                $('#onlineStatus').on('click', function () {
+                    isOnLine = navigator.onLine;
+                    isOffline = !navigator.onLine;
+                    $(this).html((isOnLine) ? 'Online' : 'Offline');
+                });
         });
     </script>
 
